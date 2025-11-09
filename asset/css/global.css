@@ -1,0 +1,44 @@
+:root {
+  --black-color: #253238;
+  --dark-cyan-color: #06807D;
+  --medium-cyan-color:#d8e5e5;
+  --cyan-color: #1ED7D1;
+  --yellow-color: #FFC433;
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+* {
+  padding: 0 ;
+  margin: 0 ;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+}
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+/* For IE, Edge (old versions) */
+html {
+  -ms-overflow-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #FFF;
+}
+.vr-center {
+  display: flex; 
+  justify-content: center;
+}
+.hr-center {
+  display: flex; 
+  align-items: center;
+}
+.highlight{
+  color: var(--dark-cyan-color) !important;
+}
