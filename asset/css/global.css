@@ -1,44 +1,153 @@
 :root {
   --black-color: #253238;
   --dark-cyan-color: #06807D;
-  --medium-cyan-color:#d8e5e5;
+  --medium-cyan-color: #d8e5e5;
   --cyan-color: #1ED7D1;
   --yellow-color: #FFC433;
-  --border-radius: 8px;
+  --border-radius: 20px;
   --transition: all 0.3s ease;
+    --text-color: #0E1E1D;
+  --muted-color: #6b7c7b;
+  --card-bg: #ffffff;
+  --radius: 12px;
 }
+
 * {
-  padding: 0 ;
-  margin: 0 ;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
+
 /* For WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   display: none;
 }
+
 /* For Firefox */
 html {
   scrollbar-width: none;
 }
+
 /* For IE, Edge (old versions) */
 html {
   -ms-overflow-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
   background-color: #FFF;
+  max-width: 1800px;
+  margin: auto;
 }
+
 .vr-center {
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
+
 .hr-center {
-  display: flex; 
+  display: flex;
   align-items: center;
 }
-.highlight{
-  color: var(--dark-cyan-color) !important;
+
+.highlight {
+  color: var(--cyan-color) !important;
+}
+
+button {
+  overflow: hidden !important;
+}
+
+/* title and  des */
+
+.global-text-container {
+  width: 80%;
+  margin: 40px auto 0px auto;
+  text-align: center;
+}
+
+.global-text-container * {
+  color: #000;
+}
+
+.global-heading {
+  font-size: 35px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.global-description {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.section-container {
+  background-color: var(--black-color);
+  border-radius: var(--border-radius);
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
+
+.section-container h2,
+.section-container p {
+  color: #fff;
+}
+
+.section-container .global-text-container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+ul{
+  list-style: none;
+ 
+}
+.business-btn{
+  background-color: #d8e5e5;
+  color: #000 !important;
+  border-radius: 8px;
+}
+
+a{
+  cursor: pointer;
+}
+
+
+@media(max-width: 1200px) {
+  .global-heading {
+    font-size: 30px; 
+  }
+}
+
+@media(max-width: 993px) {
+  .global-heading {
+    font-size: 26px;
+  }
+  .global-description {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 600px) {
+  .global-heading {
+    font-size: 24px;
+  }
+
+  .global-description {
+    font-size: 16px;
+  }
+  .section-container {
+    padding: 20px 10px;
+  }
+  .section-container .global-text-container{
+    width: 100%;
+  }
+}
+
+@media(max-width: 420px) {
 }

@@ -4,10 +4,11 @@
   position: fixed;
   width: 100%;
   z-index: 9999;
+      max-width: 1800px;
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
@@ -130,8 +131,6 @@
   border: 2px solid var(--cyan-color);
   border-radius: var(--border-radius);
   position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 
-              0 3px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
   text-decoration: none;
   transition: 0.8s ease all;
@@ -150,6 +149,12 @@
   content: '';
   background-color: var(--cyan-color);
   z-index: -1;
+  overflow: hidden;
+}
+
+#header-btn .contact-btn:before {
+border-radius: 16px;
+
 }
 
 .contact-btn:hover:before,

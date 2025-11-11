@@ -1,64 +1,948 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact our team for custom software development, ML solutions, and pricing details.">
-  <meta name="keywords" content="contact software company, get in touch, ML solutions, web development">
+  <meta name="description" content="Professional software development and ML solutions tailored for your business.">
+  <meta name="keywords" content="software development, machine learning, custom software, web app, ML dev">
   <meta name="author" content="Your Company Name">
+  <title>Home</title>
 
-  <title>Contact Us | Your Company</title>
-
-  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./asset/images/fav.png" type="image/png">
   <link rel="stylesheet" href="./asset/css/global.css">
+  <link rel="stylesheet" href="./asset/css/header.css">
   <link rel="stylesheet" href="./asset/css/index.css">
+
+  <!-- Swiper CSS -->
+<!-- Swiper CSS -->
+<link 
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+
 </head>
+
 <body>
-  
-  <!-- Global Header -->
+  <div class="main-div" >
+
+
+  <!-- Header  -->
   <div id="header"></div>
 
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <div class="container">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you! Fill out the form below and our team will get back to you soon.</p>
+  <!-- HERO SECTION -->
+ <section class="hero" id="hero">
+  <div class="hero-content">
+    <h1 class="hero-heading">
+      Reimagining Your<br>
+      <span class="highlight">Digital Success</span>
+    </h1>
 
-      <div class="contact-grid">
-        <!-- Contact Form -->
-        <form class="contact-form" id="contactForm">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <p class="hero-para">
+      At Insight Tech Digital, we are committed to helping brands grow with precision and purpose by
+      turning complex marketing challenges into meaningful digital momentum.
+    </p>
 
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    <a class="contact-btn header-btn">
+      Connect With Our Experts
+    </a>
+  </div>
+</section>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+   
 
-          <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+<!-- Swiper Brand Section -->
+<section class="brand-swiper">
+  
 
-        <!-- Contact Info -->
-        <div class="contact-info">
-          <h2>Get in Touch</h2>
-          <p><strong>Email:</strong> support@yourcompany.com</p>
-          <p><strong>Phone:</strong> +91 98765 43210</p>
-          <p><strong>Address:</strong> 123 Tech Street, Chennai, India</p>
-          <div class="social-links">
-            <a href="#">LinkedIn</a> | 
-            <a href="#">Twitter</a> | 
-            <a href="#">GitHub</a>
-          </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./asset/brand/brand-1.webp" /></div>
+      <div class="swiper-slide"><img src="./asset/brand/brand-6.webp" /></div>
+      <div class="swiper-slide"><img src="./asset/brand/brand-3.webp" /></div>
+      <div class="swiper-slide"><img src="./asset/brand/brand-4.webp" /></div>
+      <div class="swiper-slide"><img src="./asset/brand/brand-5.webp" /></div>
+      <div class="swiper-slide"><img src="./asset/brand/brand-6.webp" /></div>
+    </div>
+  </div>
+</section>
+  <!-- About-section  -->
+
+ <section class="corporate-section container">
+
+  <div class="left-image" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?q=80&w=1400&auto=format&fit=crop" alt="business meeting">
+    
+    <div class="progress-card" aria-hidden="false">
+      <h3>Business Progress</h3>
+
+      <div class="progress-row">
+        <span>Business consultants</span>
+        <span>82%</span>
+      </div>  
+      <div class="bar" aria-hidden="true">
+        <div class="fill" style="--w:82%; width:82%;"></div>
+      </div>
+
+      <div class="progress-row">
+        <span>Client communication</span>
+        <span>90%</span>
+      </div>
+      <div class="bar" aria-hidden="true">
+        <div class="fill" style="--w:90%; width:90%;"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="right-content" role="region" aria-label="About us">
+    <p class="small-title"> GET TO KNOW US</p>
+
+    <h1>
+      Driving Innovation and Excellence for Sustainable
+      Corporate Success Worldwide.
+    </h1>
+
+    <div class="cards">
+
+      <div class="card" tabindex="0" aria-describedby="mission-desc">
+        <h3>Our Mission</h3>
+        <p id="mission-desc">our mission is empower businesses through innovative best solution, exceptional service.</p>
+
+
+        <!-- overlay that appears on hover/focus -->
+        <div class="overlay" aria-hidden="true">
+          <ul>
+            <li>✦ Innovation &amp; Excellence</li>
+            <li>✦ Exceptional Customer</li>
+            <li>✦ Business Growth</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0" aria-describedby="vision-desc">
+        <h3>Our Vision</h3>
+        <p id="vision-desc">Our vision is to become a global leader in providing transformative business solutions.</p>
+
+        
+
+        <div class="overlay" aria-hidden="true">
+          <ul>
+            <li>✦ Global Leadership</li>
+            <li>✦ Transformative Impact</li>
+            <li>✦ Sustainable Success</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="contact-btn cta-btn" onclick="location.href='#choose'">
+      Learn More About Us 
+    </button>
+  </div>
+
+</section>
+
+<!-- CHOOSE SECTION -->
+ 
+  <section class="choose-section">
+
+  <div class="choose-left">
+    <img src="./asset/images/banner.jpg" alt="meeting">
+  </div>
+
+  <div class="choose-right">
+    <p class="mini-title">CHOOSE THE BEST</p>
+
+    <h1>Why Choose Us</h1>
+    <p class="sub-title">Beyond Service, a Partnership in Growth.</p>
+
+    <div class="choose-card">
+      <div class="icon-choose"></div>
+      <div>
+        <h3>Proven Experience</h3>
+        <p>Years of working with diverse brands and addressing challenges have taught us what truly drives digital growth.</p>
+      </div>
+    </div>
+
+    <div class="choose-card">
+      <div class="icon-choose"></div>
+      <div>
+        <h3>Deep Expertise</h3>
+        <p>Our team of seasoned marketers does what it takes to ensure your brand connects digitally with the right audience.</p>
+      </div>
+    </div>
+
+    <div class="choose-card">
+      <div class="icon-choose"></div>
+      <div>
+        <h3>Growth-Focused</h3>
+        <p>We create strategies that help your brand grow steadily and sustainably, ensuring tangible business success.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+  <!-- states-section  -->
+<section class="stats-section">
+  <h1 class="stats-title">Numbers and facts that<br>define performance.</h1>
+
+  <div class="stats-content">
+
+    <div class="stats-left">
+      <img src="./asset/images/banner.jpg" alt="">
+      <div class="call-card">
+        <p>Get Started<br>Free Call?</p>
+        <div class="call-icon"></div>
+        <span>+91 98765 43210</span>
+      </div>
+    </div>
+
+    <div class="stats-right">
+
+      <div class="stats-card">
+        <h2 class="ring-animation"><span data-count="99">0</span>%</h2>
+        <div>
+          <h3>Customer Satisfaction</h3>
+          <p>Through a combination of data-driven insights and innovative approaches.</p>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <h2 class="ring-animation"><span data-count="25">0</span>+</h2>
+        <div>
+          <h3>Successful Projects</h3>
+          <p>Through a combination of data-driven insights and innovative approaches.</p>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <h2 class="ring-animation"><span data-count="5">0</span>+</h2>
+        <div>
+          <h3>Years in Industry</h3>
+          <p>Through a combination of data-driven insights and innovative approaches.</p>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <h2 class="ring-animation"><span data-count="24">0</span>hrs</h2>
+        <div>
+          <h3>Support</h3>
+          <p>Through a combination of data-driven insights and innovative approaches.</p>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <h2 class="ring-animation"><span data-count="8.5">0</span>X</h2>
+        <div>
+          <h3>Faster Growth</h3>
+          <p>Through a combination of data-driven insights and innovative approaches.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Brand-section   -->
+ <section class="brand-con">
+<div class="brand-section">
+  <div class="brand-content">
+    <h2>Make Your Brand Stand Out,<br>Starting Today.</h2>
+
+    <a href="#" class="contact-btn">
+      Connect With Our Experts
+      <span class="arrow"></span>
+    </a>
+  </div>
+
+  <div class="brand-img"></div>
+</div>
+</section>  
+   <!-- benefits-section  -->
+
+  <section class="service-benefits">
+  <div class="service-con">
+  <h2 class="title">Our Services</h2>
+  <p class="subtitle">Driving Success With Solid Strategies</p>
+  <p class="desc">
+    At Insight Tech Digital, we design performance-driven digital strategies that help your brand grow with purpose.
+    From SEO to social campaigns, every service we offer is crafted to deliver real, lasting impact.
+  </p>
+  </div>
+
+ <div class="benefit-cards">
+
+    <!-- Card 01 -->
+    <div class="benefit-card">
+      <span class="badge">01.</span>
+      <h3>Search Engine Optimization (SEO)</h3>
+      <p>We help your brand rank higher, attract quality traffic, and earn trust through proven, ethical SEO practices.</p>
+
+      <div class="benefit-overlay">
+        <ul>
+          <li>On-Page SEO: Content optimization</li>
+          <li>Off-Page SEO: Backlink building</li>
+          <li>Technical SEO: Speed & structure</li>
+          <li>B2B SEO Agency: Lead strategies</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 02 -->
+    <div class="benefit-card">
+      <span class="badge">02.</span>
+      <h3>PPC Management</h3>
+      <p>We run paid campaigns that maximize ROI and ensure every click moves you closer to conversion.</p>
+
+      <div class="benefit-overlay">
+        <ul>
+          <li>Google Ads: Data-driven campaigns</li>
+          <li>Rescue Campaigns: Fix low-performing ads</li>
+          <li>Amazon Ads: Boost visibility</li>
+          <li>Performance Tracking: Optimize spend</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 03 -->
+    <div class="benefit-card">
+      <span class="badge">03.</span>
+      <h3>Social Media Marketing</h3>
+      <p>We turn social presence into business value by connecting brands with the right audience.</p>
+
+      <div class="benefit-overlay">
+        <ul>
+          <li>SMO: Engagement and branding</li>
+          <li>SMM: Campaign execution</li>
+          <li>Meta Ads: Target customers</li>
+          <li>LinkedIn Campaigns: B2B leads</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 04 -->
+    <div class="benefit-card">
+      <span class="badge">04.</span>
+      <h3>Content Marketing</h3>
+      <p>We create content that informs, inspires, and converts — aligned with your audience.</p>
+
+      <div class="benefit-overlay">
+        <ul>
+          <li>LLM Optimization: AI-ready writing</li>
+          <li>Technical Writing: Simplify complexity</li>
+          <li>Copywriting: Persuasive storytelling</li>
+          <li>Content Strategy: Growth mapping</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 05 -->
+    <div class="benefit-card">
+      <span class="badge">05.</span>
+      <h3>Email Marketing</h3>
+      <p>Automated, personalized campaigns that turn subscribers into loyal customers.</p>
+
+      <div class="benefit-overlay">
+        <ul>
+          <li>Automation: Smart delivery</li>
+          <li>Lead Nurturing: Relationships</li>
+          <li>Segmentation: Target audience</li>
+          <li>Performance Tracking: Optimize success</li>
+        </ul>
+      </div>
+    </div>
+
+  </div> 
+
+</section>
+
+<!-- Tech-stack-section -->
+<section class="tech-section">
+  <h2>Tech Stack</h2>
+  <p>Powering Performance with Modern Marketing Technology</p>
+
+  <div class="slider-wrapper">
+    
+   
+    <div class="slider row-1">
+      <div class="slide-track">
+        <div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+  HTML
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+  CSS
+</div>
+
+<div class="slider-card">
+  <img src="https://miro.medium.com/v2/resize:fit:800/format:webp/1*E6YVGNsq4CPGK1eIG0Rk5A.png" alt="Tailwind">
+  Tailwind
+</div>
+
+<div class="slider-card">
+  <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap">
+  Bootstrap
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+  React
+</div>
+
+<div class="slider-card">
+  <img src="https://angular.io/assets/images/logos/angular/angular.png" alt="Angular">
+  Angular
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+  JavaScript
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript">
+  TypeScript
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
+  Node.js
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js">
+  Express.js
+</div>
+
+<div class="slider-card">
+  <img src="https://jwt.io/img/pic_logo.svg" alt="JWT">
+  JWT
+</div>
+
+<div class="slider-card">
+  <img src="https://raw.githubusercontent.com/jaredhanson/passport/master/logo.png" alt="Passport">
+  Passport
+</div>
+
+<div class="slider-card">
+  <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL">
+  MySQL
+</div>
+
+<div class="slider-card">
+  <img src="https://sendgrid.com/wp-content/uploads/2016/06/SendGrid_Logo_2016.png" alt="SendGrid">
+  SendGrid
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Jenkins_logo.svg" alt="Jenkins">
+  Jenkins
+</div>
+
+<div class="slider-card">
+  <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+  Docker
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+  Kubernetes
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git">
+  Git
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Subversion-logo.svg" alt="SVN">
+  SVN
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+  AWS
+</div>
+        
+        <div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+  HTML
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+  CSS
+</div>
+
+<div class="slider-card">
+  <img src="https://miro.medium.com/v2/resize:fit:800/format:webp/1*E6YVGNsq4CPGK1eIG0Rk5A.png" alt="Tailwind">
+  Tailwind
+</div>
+
+<div class="slider-card">
+  <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap">
+  Bootstrap
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+  React
+</div>
+
+<div class="slider-card">
+  <img src="https://angular.io/assets/images/logos/angular/angular.png" alt="Angular">
+  Angular
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+  JavaScript
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript">
+  TypeScript
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
+  Node.js
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js">
+  Express.js
+</div>
+
+<div class="slider-card">
+  <img src="https://jwt.io/img/pic_logo.svg" alt="JWT">
+  JWT
+</div>
+
+<div class="slider-card">
+  <img src="https://raw.githubusercontent.com/jaredhanson/passport/master/logo.png" alt="Passport">
+  Passport
+</div>
+
+<div class="slider-card">
+  <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL">
+  MySQL
+</div>
+
+<div class="slider-card">
+  <img src="https://sendgrid.com/wp-content/uploads/2016/06/SendGrid_Logo_2016.png" alt="SendGrid">
+  SendGrid
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Jenkins_logo.svg" alt="Jenkins">
+  Jenkins
+</div>
+
+<div class="slider-card">
+  <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+  Docker
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+  Kubernetes
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git">
+  Git
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Subversion-logo.svg" alt="SVN">
+  SVN
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+  AWS
+</div>
+      </div>
+    </div>
+
+    
+    <div class="slider row-2">
+      <div class="slide-track">
+        <div class="slider-card">
+  <img src="https://raw.githubusercontent.com/brix/crypto-js/develop/assets/logo.png" alt="Crypto.js">
+  Crypto.js
+</div>
+
+<div class="slider-card">
+  <img src="https://miro.medium.com/v2/resize:fit:800/format:webp/1*1W0UN2-qqT0-6XfHm4G5PQ.png" alt="REST APIs">
+  REST APIs
+</div>
+
+<div class="slider-card">
+  <img src="https://assets.zyrosite.com/mnLn3y1qgNfql2ML/hubspot-cms-logo-Y6Wv9rylnVIB1vOl.png" alt="HubSpot CMS">
+  HubSpot CMS
+</div>
+
+<div class="slider-card">
+  <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+  Docker
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+  Kubernetes
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git">
+  Git
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Subversion-logo.svg" alt="SVN">
+  SVN
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+  AWS
+</div>
+
+
+        <!-- DUPLICATE -->
+       <div class="slider-card">
+  <img src="https://raw.githubusercontent.com/brix/crypto-js/develop/assets/logo.png" alt="Crypto.js">
+  Crypto.js
+</div>
+
+<div class="slider-card">
+  <img src="https://miro.medium.com/v2/resize:fit:800/format:webp/1*1W0UN2-qqT0-6XfHm4G5PQ.png" alt="REST APIs">
+  REST APIs
+</div>
+
+<div class="slider-card">
+  <img src="https://assets.zyrosite.com/mnLn3y1qgNfql2ML/hubspot-cms-logo-Y6Wv9rylnVIB1vOl.png" alt="HubSpot CMS">
+  HubSpot CMS
+</div>
+
+<div class="slider-card">
+  <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+  Docker
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+  Kubernetes
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git">
+  Git
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Subversion-logo.svg" alt="SVN">
+  SVN
+</div>
+
+<div class="slider-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+  AWS
+</div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+ <!-- Process-section  -->
+<section class="process-section">
+  <div class="container">
+    <span class="badge-process">OUR PROCESS</span>
+    <div class="process-header">
+      
+      <h2>Collaboration Made <span>Simple.</span></h2>
+      <p class="subtext">
+        Developing personalized customer journeys to increase satisfaction and loyalty.
+      </p>
+      <a href="#" class="contact-btn call-btn">Request a Call →</a>
+    </div>
+
+    <div class="process-steps">
+
+      <!-- Step 1 -->
+      <div class="step-card">
+        <h1 class="number">01</h1>
+        <h3>Audit & Understand</h3>
+        <p>
+          We analyze your goals and craft a focused plan for measurable outcomes.
+        </p>
+      </div>
+
+      <div class="connector">
+        <span>→</span>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card">
+        <h1 class="number">02</h1>
+        <h3>Design & Develop</h3>
+        <p>
+          We design seamless experiences and build scalable, high-performing solutions.
+        </p>
+      </div>
+
+      <div class="connector">
+        <span>→</span>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card">
+        <h1 class="number">03</h1>
+        <h3>Optimize & Deliver</h3>
+        <p>
+          We ensure flawless performance and deliver solutions aligned with business goals.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ 
+<!-- Team-section  -->
+<section class="team-section">
+  <div class="team-container">
+    
+    <p class="team-tag">MEET OUR TEAM</p>
+    <h2 class="team-title">People Behind <span>Success.</span></h2>
+    <p class="team-sub">Driven by Curiosity and Passion</p>
+
+    <div class="team-grid">
+
+      <div class="team-card" data-animate>
+        <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwaW4lMjBzdWl0fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="profile">
+        <h3 class="team-name">Eade Marren</h3>
+        <p class="team-role">Chief Executive</p>
+      </div>
+
+     <div class="team-card" data-animate>
+        <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwaW4lMjBzdWl0fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="profile">
+        <h3 class="team-name">Savannah Nguyen</h3>
+        <p class="team-role">Operations Head</p>
+      </div>
+
+      <div class="team-card" data-animate>
+         <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwaW4lMjBzdWl0fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="profile">
+        <h3 class="team-name">Kristin Watson</h3>
+        <p class="team-role">Marketing Lead</p>
+      </div>
+
+     <div class="team-card" data-animate>
+         <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwaW4lMjBzdWl0fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="profile">
+        <h3 class="team-name">Darlene Robertson</h3>
+        <p class="team-role">Business Director</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Benefits-section  -->
+ <section class="benefits-section">
+  <div class="benefits-container">
+
+    <h2 class="benefits-title">
+      Who Benefits <span>From Us</span>
+    </h2>
+    <p class="benefits-subtitle">Solutions for Every Business Type</p>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-card">
+        <div class="icon startup"></div>
+        <h3>Startups</h3>
+        <p>
+          We help energetic startups build strong online visibility and
+          find the right audience faster.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon enterprise"></div>
+        <h3>Enterprises</h3>
+        <p>
+          We support large firms with scalable strategies that enhance
+          brand presence and efficiency.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon b2b"></div>
+        <h3>B2B Companies</h3>
+        <p>
+          We strengthen digital pipelines with strategies that attract
+          quality leads and long-term relationships.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon agency"></div>
+        <h3>Agencies</h3>
+        <p>
+          We partner with agencies to deliver reliable digital marketing
+          support that scales with client demand.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+<!-- Blog-section  -->
+
+<section class="blog-section">
+  <div class="blog-container">
+
+    <h2 class="blog-title">Blogs</h2>
+    <p class="blog-subtitle">
+      Insights, Trends, and Strategies
+    </p>
+    <p class="blog-desc">
+      Explore topics ranging from current trends to foundational marketing
+      and branding strategies, crafted by our experts.
+    </p>
+
+    <div class="blog-grid">
+
+      <!-- Blog 1 -->
+      <div class="blog-card">
+        <span class="date-badge"><strong>10</strong> MAR</span>
+        <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg" alt="">
+        <div class="blog-content">
+          <span class="meta">Branding · By Insight Team</span>
+          <h3>Brand Positioning Strategies That Drive Authority in 2025</h3>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="blog-card">
+        <span class="date-badge"><strong>22</strong> FEB</span>
+        <img src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg" alt="">
+        <div class="blog-content">
+          <span class="meta">Marketing · By Insight Team</span>
+          <h3>Content Trends That Boost Engagement and Trust</h3>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="blog-card">
+        <span class="date-badge"><strong>02</strong> JAN</span>
+        <img src="https://images.pexels.com/photos/3184632/pexels-photo-3184632.jpeg" alt="">
+        <div class="blog-content">
+          <span class="meta">Strategy · By Insight Team</span>
+          <h3>Data-Driven Marketing Insights for Better Growth</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Faq-section  -->
+ <section class="faq-section">
+  <div class="faq-container">
+
+    <div class="faq-left">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">What services do you provide?<span>+</span></button>
+        <div class="faq-answer">
+          We offer end-to-end digital marketing, branding, social media management, and performance optimization solutions.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How can your marketing solutions benefit us?<span>+</span></button>
+        <div class="faq-answer">
+          Our strategies are designed to increase brand reach, improve conversion rates, and attract the right audience to your business.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you customize marketing campaigns?<span>+</span></button>
+        <div class="faq-answer">
+          Yes, we personalize campaigns based on your business model, audience behavior, and industry insights.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do you measure performance?<span>+</span></button>
+        <div class="faq-answer">
+          We use analytics tools, customer feedback, and performance reports to track growth and optimize results.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can you help scale our customer support?<span>+</span></button>
+        <div class="faq-answer">
+          Absolutely! We provide tailored support systems, automation solutions, and optimization strategies to improve response time and customer experience.
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Global Footer -->
+    <!-- Right Card -->
+    <aside class="faq-card">
+      <h2>Business Support</h2>
+      <p>Digital Growth Assistance</p>
+
+      <a href="tel:+8321890640" class="phone-tag">
+        📞 +8 (321) 890-640
+      </a>
+
+      <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwaW4lMjBzdWl0fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="Business Man" class="right-img" />
+    </aside>
+
+  </div>
+</section>
+<section class="brand-con brand-container">
+<div class="brand-section">
+  <div class="brand-content">
+    <h2>Ready to Grow Your <br>Brand Online?</h2>
+
+    <a href="#" class="contact-btn brand-btn">
+      Connect With Our Experts
+      <span class="arrow">➜</span>
+    </a>
+  </div>
+
+  <div class="brand-img"></div>
+</div>
+</section>
+
+  </div>
+
+
+  <!-- Footer (Loaded Globally) -->
   <div id="footer"></div>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./asset/js/global.js"></script>
-  <script src="./asset/js/index.js"></script>
+ <script src="https://kit.fontawesome.com/4968d8dd70.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
